@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Lab1_Grupo6.AccesoDatos/Lab1_Grupo6.AccesoDatos.csproj" />
+  <Project Path="Lab1_Grupo6.Dominio/Lab1_Grupo6.Dominio.csproj" Id="2b6e3e8b-3d64-4eff-8d88-2b62eca49e7d" />
+  <Project Path="Lab1_Grupo6.LogicaNegocios/Lab1_Grupo6.LogicaNegocios.csproj" Id="81bfe109-012e-4ffa-830a-cd3ee65f91c3" />
+  <Project Path="Lab1_Grupo6.Utilidades/Lab1_Grupo6.Utilidades.csproj" Id="45cc8300-7299-4446-95e5-2a3a7489e971" />
+</Solution>
