@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tipo-cedula"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ esEdicion ? 'Editar' : 'Nuevo' }} Tipo Cédula</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="form" (ngSubmit)="guardar()">
+    <ion-item>
+      <ion-input label="Descripción" labelPlacement="stacked" formControlName="descripcion"></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit" [disabled]="form.invalid">Guardar</ion-button>
+  </form>
+</ion-content>
+

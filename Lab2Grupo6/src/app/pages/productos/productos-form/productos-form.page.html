@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/productos"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ esEdicion ? 'Editar' : 'Nuevo' }} Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="form" (ngSubmit)="guardar()">
+    <ion-item>
+      <ion-input label="ID Producto" labelPlacement="stacked" formControlName="productoId"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Nombre" labelPlacement="stacked" formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Precio" labelPlacement="stacked" type="number" formControlName="precio"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Stock" labelPlacement="stacked" type="number" formControlName="stock"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-select label="Categoría" labelPlacement="stacked" formControlName="categoriaId">
+        <ion-select-option *ngFor="let c of categorias" [value]="c.categoriaId">{{ c.nombreCategoria }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-toggle formControlName="activo">Activo</ion-toggle>
+    </ion-item>
+    <ion-button expand="block" type="submit" [disabled]="form.invalid">Guardar</ion-button>
+  </form>
+</ion-content>
+

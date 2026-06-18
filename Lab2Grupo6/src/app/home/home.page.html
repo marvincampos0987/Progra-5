@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Lab2 Grupo 6</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <ion-item button routerLink="/clientes" detail>
+      <ion-icon name="people" slot="start"></ion-icon>
+      <ion-label>Clientes</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/pedidos" detail>
+      <ion-icon name="cart" slot="start"></ion-icon>
+      <ion-label>Pedidos</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/productos" detail>
+      <ion-icon name="cube" slot="start"></ion-icon>
+      <ion-label>Productos</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/categorias" detail>
+      <ion-icon name="folder" slot="start"></ion-icon>
+      <ion-label>Categorías</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/detalles-pedido" detail>
+      <ion-icon name="list" slot="start"></ion-icon>
+      <ion-label>Detalles Pedido</ion-label>
+    </ion-item>
+    <ion-item button routerLink="/tipo-cedula" detail>
+      <ion-icon name="card" slot="start"></ion-icon>
+      <ion-label>Tipo Cédula</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

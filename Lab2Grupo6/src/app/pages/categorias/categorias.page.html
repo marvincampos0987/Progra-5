@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Categorías</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="nuevo()">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let c of categorias">
+      <ion-label>
+        <h2>{{ c.nombreCategoria }}</h2>
+        <p>{{ c.activo ? 'Activo' : 'Inactivo' }}</p>
+      </ion-label>
+      <ion-button fill="clear" (click)="editar(c.categoriaId)">
+        <ion-icon name="create"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" color="danger" (click)="eliminar(c.categoriaId)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

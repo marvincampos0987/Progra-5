@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/detalles-pedido"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ esEdicion ? 'Editar' : 'Nuevo' }} Detalle Pedido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="form" (ngSubmit)="guardar()">
+    <ion-item>
+      <ion-select label="Pedido" labelPlacement="stacked" formControlName="pedidoId">
+        <ion-select-option *ngFor="let p of pedidos" [value]="p.pedidoId">Pedido #{{ p.pedidoId }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-select label="Producto" labelPlacement="stacked" formControlName="productoId">
+        <ion-select-option *ngFor="let p of productos" [value]="p.productoId">{{ p.nombre }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Cantidad" labelPlacement="stacked" type="number" formControlName="cantidad"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Precio Unitario" labelPlacement="stacked" type="number" formControlName="precioUnitario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Descuento" labelPlacement="stacked" type="number" formControlName="descuento"></ion-input>
+    </ion-item>
+    <ion-button expand="block" type="submit" [disabled]="form.invalid">Guardar</ion-button>
+  </form>
+</ion-content>
+
