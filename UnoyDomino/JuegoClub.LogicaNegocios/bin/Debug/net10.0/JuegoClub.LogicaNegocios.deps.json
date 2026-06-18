@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "JuegoClub.LogicaNegocios/1.0.0": {
+        "dependencies": {
+          "JuegoClub.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "JuegoClub.LogicaNegocios.dll": {}
+        }
+      },
+      "JuegoClub.Dominio/1.0.0": {
+        "runtime": {
+          "JuegoClub.Dominio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JuegoClub.LogicaNegocios/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JuegoClub.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

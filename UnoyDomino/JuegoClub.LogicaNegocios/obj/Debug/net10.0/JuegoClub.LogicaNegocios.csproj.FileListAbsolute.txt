@@ -1,0 +1,15 @@
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\bin\Debug\net10.0\JuegoClub.LogicaNegocios.deps.json
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\bin\Debug\net10.0\JuegoClub.LogicaNegocios.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\bin\Debug\net10.0\JuegoClub.LogicaNegocios.pdb
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\bin\Debug\net10.0\JuegoClub.Dominio.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\bin\Debug\net10.0\JuegoClub.Dominio.pdb
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClub.LogicaNegocios.csproj.AssemblyReference.cache
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClub.LogicaNegocios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClub.LogicaNegocios.AssemblyInfoInputs.cache
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClub.LogicaNegocios.AssemblyInfo.cs
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClub.LogicaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClu.3E42E768.Up2Date
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClub.LogicaNegocios.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\refint\JuegoClub.LogicaNegocios.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClub.LogicaNegocios.pdb
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\ref\JuegoClub.LogicaNegocios.dll
