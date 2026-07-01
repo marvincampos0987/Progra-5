@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\JuegoClub.Dominio\JuegoClub.Dominio.csproj" />
     <ProjectReference Include="..\JuegoClub.LogicaNegocios\JuegoClub.LogicaNegocios.csproj" />
+    <ProjectReference Include="..\JuegoClub.AccesoDatos\JuegoClub.AccesoDatos.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

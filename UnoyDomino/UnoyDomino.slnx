@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="JuegoClub.API/JuegoClub.API.csproj" />
+  <Project Path="JuegoClub.AccesoDatos/JuegoClub.AccesoDatos.csproj" />
   <Project Path="JuegoClub.Dominio/JuegoClub.Dominio.csproj" />
   <Project Path="JuegoClub.LogicaNegocios/JuegoClub.LogicaNegocios.csproj" />
 </Solution>

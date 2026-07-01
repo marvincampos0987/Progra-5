@@ -15,9 +15,14 @@ namespace JuegoClub.Dominio.Clases
         public List<JugadorMesa> Jugadores { get; set; } = new List<JugadorMesa>();
         public int TurnoActualIndex { get; set; } = 0;
 
-        // Propiedades dinÃ¡micas de las reglas segÃºn el juego
+        // Propiedades dinámicas de las reglas según el juego
         public EstadoUno? EstadoUno { get; set; }
         public EstadoDomino? EstadoDomino { get; set; }
+
+        // Configuración de juego personalizada
+        public bool AcumularMas { get; set; } = false;
+        public int CartasAcumuladasRobar { get; set; } = 0;
+        public bool EsPrivada { get; set; } = true;
     }
 
     public class JugadorMesa

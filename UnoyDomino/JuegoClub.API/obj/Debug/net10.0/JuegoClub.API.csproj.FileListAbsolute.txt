@@ -32,3 +32,8 @@ C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\obj\Debug\net10.0\refint\JuegoClu
 C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\obj\Debug\net10.0\JuegoClub.API.pdb
 C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\obj\Debug\net10.0\JuegoClub.API.genruntimeconfig.cache
 C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\obj\Debug\net10.0\ref\JuegoClub.API.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\bin\Debug\net10.0\JuegoClub.AccesoDatos.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.API\bin\Debug\net10.0\JuegoClub.AccesoDatos.pdb

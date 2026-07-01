@@ -13,3 +13,5 @@ C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\Jueg
 C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\refint\JuegoClub.LogicaNegocios.dll
 C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\JuegoClub.LogicaNegocios.pdb
 C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\obj\Debug\net10.0\ref\JuegoClub.LogicaNegocios.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\bin\Debug\net10.0\JuegoClub.AccesoDatos.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.LogicaNegocios\bin\Debug\net10.0\JuegoClub.AccesoDatos.pdb

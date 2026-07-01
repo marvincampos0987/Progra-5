@@ -1,0 +1,35 @@
+using Microsoft.EntityFrameworkCore;
+using JuegoClub.Dominio.Entidades;
+
+namespace JuegoClub.AccesoDatos.Contexto
+{
+    public class JuegoClubContext : DbContext
+    {
+        public JuegoClubContext(DbContextOptions<JuegoClubContext> options) : base(options) { }
+
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<HistorialPartida> HistorialPartidas { get; set; }
+        public DbSet<Logro> Logros { get; set; }
+        public DbSet<UsuarioLogro> UsuarioLogros { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Configuración de la llave compuesta para la tabla intermedia de logros
+            modelBuilder.Entity<UsuarioLogro>()
+                .HasKey(ul => new { ul.UsuarioId, ul.LogroId });
+
+            // Relaciones
+            modelBuilder.Entity<UsuarioLogro>()
+                .HasOne(ul => ul.Usuario)
+                .WithMany(u => u.LogrosDesbloqueados)
+                .HasForeignKey(ul => ul.UsuarioId);
+
+            modelBuilder.Entity<UsuarioLogro>()
+                .HasOne(ul => ul.Logro)
+                .WithMany()
+                .HasForeignKey(ul => ul.LogroId);
+        }
+    }
+}

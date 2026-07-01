@@ -1,0 +1,15 @@
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\bin\Debug\net10.0\JuegoClub.AccesoDatos.deps.json
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\bin\Debug\net10.0\JuegoClub.AccesoDatos.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\bin\Debug\net10.0\JuegoClub.AccesoDatos.pdb
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\bin\Debug\net10.0\JuegoClub.Dominio.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\bin\Debug\net10.0\JuegoClub.Dominio.pdb
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\JuegoClub.AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\JuegoClub.AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\JuegoClub.AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\JuegoClub.AccesoDatos.AssemblyInfo.cs
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\JuegoClub.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\JuegoClu.48C67BE8.Up2Date
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\JuegoClub.AccesoDatos.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\refint\JuegoClub.AccesoDatos.dll
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\JuegoClub.AccesoDatos.pdb
+C:\Users\pc\Documents\UnoyDomino\JuegoClub.AccesoDatos\obj\Debug\net10.0\ref\JuegoClub.AccesoDatos.dll
