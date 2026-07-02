@@ -1,0 +1,120 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="header-toolbar">
+    <ion-title>Clasificación Ligas Europeas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding content-bg">
+  <div class="main-container">
+    
+    <!-- Filter Section -->
+    <ion-card class="glass-card filter-card">
+      <ion-card-content class="filter-card-content">
+        <ion-grid>
+          <ion-row class="ion-align-items-center">
+            <ion-col size="12" size-md="6">
+              <ion-item lines="none" class="selector-item">
+                <ion-label position="stacked">Seleccionar Liga</ion-label>
+                <ion-select [value]="selectedLeagueId" (ionChange)="onLeagueChange($event)" placeholder="Seleccione una liga" interface="popover" class="custom-select">
+                  <ion-select-option *ngFor="let league of leagues" [value]="league.idLeague">
+                    {{ league.strLeagueAlternate || league.strLeague }}
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12" size-md="6">
+              <ion-item lines="none" class="selector-item">
+                <ion-label position="stacked">Seleccionar Temporada</ion-label>
+                <ion-select [value]="selectedSeason" (ionChange)="onSeasonChange($event)" placeholder="Seleccione temporada" interface="popover" class="custom-select">
+                  <ion-select-option *ngFor="let s of seasons" [value]="s.strSeason">
+                    {{ s.strSeason }}
+                  </ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Error Message -->
+    <div class="error-container" *ngIf="errorMessage">
+      <ion-text color="danger">
+        <p class="error-text">{{ errorMessage }}</p>
+      </ion-text>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-container" *ngIf="isLoading">
+      <ion-spinner name="crescent" color="primary"></ion-spinner>
+      <p class="loading-text">Cargando clasificación...</p>
+    </div>
+
+    <!-- Standings Table Card -->
+    <ion-card class="glass-card table-card" *ngIf="!isLoading && tableData.length > 0">
+      <ion-card-header>
+        <div class="card-header-wrapper">
+          <ion-card-title class="card-title-container">
+            <span class="title-text">Tabla de Posiciones</span>
+            <ion-badge color="primary" class="season-badge">{{ selectedSeason }}</ion-badge>
+          </ion-card-title>
+        </div>
+      </ion-card-header>
+      
+      <ion-card-content class="no-padding-content">
+        <!-- Scrollable container for the table -->
+        <div class="table-responsive">
+          <table class="standings-table">
+            <thead>
+              <tr>
+                <th class="col-rank">#</th>
+                <th class="col-team">Equipo</th>
+                <th class="col-stat">PJ</th>
+                <th class="col-stat hide-xs">G</th>
+                <th class="col-stat hide-xs">E</th>
+                <th class="col-stat hide-xs">P</th>
+                <th class="col-stat hide-xs">DG</th>
+                <th class="col-stat col-pts">PTS</th>
+                <th class="col-form hide-sm">Forma</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of tableData" [ngClass]="getZoneClass(row.strDescription)">
+                <td class="col-rank">
+                  <span class="rank-badge" [attr.data-rank]="row.intRank">{{ row.intRank }}</span>
+                </td>
+                <td class="col-team">
+                  <div class="team-info">
+                    <img [src]="row.strBadge" alt="{{ row.strTeam }} badge" class="team-badge" onerror="this.src='assets/icon/favicon.png'"/>
+                    <span class="team-name">{{ row.strTeam }}</span>
+                  </div>
+                </td>
+                <td class="col-stat">{{ row.intPlayed }}</td>
+                <td class="col-stat hide-xs">{{ row.intWin }}</td>
+                <td class="col-stat hide-xs">{{ row.intDraw }}</td>
+                <td class="col-stat hide-xs">{{ row.intLoss }}</td>
+                <td class="col-stat hide-xs" [ngClass]="{'positive-dg': getGoalDiff(row.intGoalDifference) > 0, 'negative-dg': getGoalDiff(row.intGoalDifference) < 0}">
+                  {{ getGoalDiff(row.intGoalDifference) > 0 ? '+' : '' }}{{ row.intGoalDifference }}
+                </td>
+                <td class="col-stat col-pts font-bold">{{ row.intPoints }}</td>
+                <td class="col-form hide-sm">
+                  <div class="form-container">
+                    <span *ngFor="let outcome of getFormArray(row.strForm)" class="form-dot" [ngClass]="outcome.toLowerCase()">
+                      {{ outcome }}
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Empty State -->
+    <div class="empty-container" *ngIf="!isLoading && tableData.length === 0 && !errorMessage">
+      <p class="empty-text">No se encontraron datos para la liga y temporada seleccionadas.</p>
+    </div>
+
+  </div>
+</ion-content>
