@@ -1,0 +1,379 @@
+:host {
+  --football-bg-primary: #0f172a; // Deep slate
+  --football-bg-secondary: #1e293b;
+  --football-card-bg: rgba(30, 41, 59, 0.7);
+  --football-card-border: rgba(255, 255, 255, 0.08);
+  --football-text-primary: #f8fafc;
+  --football-text-secondary: #94a3b8;
+  --football-accent: #38bdf8; // Sky blue
+  --football-border-radius: 16px;
+
+  --champions-color: #3b82f6;
+  --europa-color: #f97316;
+  --conference-color: #10b981;
+  --relegation-color: #ef4444;
+}
+
+.football-content {
+  --background: var(--football-bg-primary);
+  --color: var(--football-text-primary);
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+.football-toolbar {
+  --background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --color: var(--football-text-primary);
+  --border-color: rgba(255, 255, 255, 0.05);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+// Selects / Filter Area
+.filters-container {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0) 100%);
+  padding: 16px 8px;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--football-card-border);
+  margin-bottom: 16px;
+}
+
+.select-wrapper {
+  background: var(--football-bg-secondary);
+  border: 1px solid var(--football-card-border);
+  border-radius: 12px;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  &:focus-within {
+    border-color: var(--football-accent);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+  }
+}
+
+.select-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--football-text-secondary);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.custom-select {
+  --placeholder-color: #64748b;
+  --placeholder-opacity: 1;
+  color: var(--football-text-primary);
+  font-weight: 600;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+// Table styling
+.table-container {
+  padding: 0 16px 24px;
+}
+
+.table-card {
+  background: var(--football-card-bg);
+  border: 1px solid var(--football-card-border);
+  border-radius: var(--football-border-radius);
+  backdrop-filter: blur(16px);
+  margin: 0 0 20px 0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.table-card-header {
+  border-bottom: 1px solid var(--football-card-border);
+  padding: 16px 20px;
+}
+
+.table-title {
+  color: var(--football-text-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.table-card-content {
+  padding: 0;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+
+  thead {
+    background: rgba(15, 23, 42, 0.4);
+    
+    th {
+      padding: 12px 16px;
+      font-weight: 600;
+      color: var(--football-text-secondary);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--football-card-border);
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.02);
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      // Zone Indicator left border
+      &.zone-champions {
+        border-left: 4px solid var(--champions-color);
+      }
+      &.zone-europa {
+        border-left: 4px solid var(--europa-color);
+      }
+      &.zone-conference {
+        border-left: 4px solid var(--conference-color);
+      }
+      &.zone-relegation {
+        border-left: 4px solid var(--relegation-color);
+      }
+    }
+
+    td {
+      padding: 14px 16px;
+      vertical-align: middle;
+    }
+  }
+}
+
+// Columns width and alignments
+.col-rank {
+  width: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rank-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+}
+
+.col-team {
+  min-width: 180px;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.team-badge {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.team-name {
+  font-weight: 600;
+  color: var(--football-text-primary);
+}
+
+.col-stat {
+  width: 45px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--football-text-secondary);
+}
+
+.col-pts {
+  width: 50px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--football-accent);
+}
+
+.col-form {
+  min-width: 120px;
+  text-align: center;
+}
+
+.form-container {
+  display: inline-flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.form-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+
+  &.w {
+    background-color: #10b981; // Green
+    box-shadow: 0 0 4px rgba(16, 185, 129, 0.4);
+  }
+  &.d {
+    background-color: #64748b; // Slate
+    box-shadow: 0 0 4px rgba(100, 116, 139, 0.4);
+  }
+  &.l {
+    background-color: #ef4444; // Red
+    box-shadow: 0 0 4px rgba(239, 68, 68, 0.4);
+  }
+}
+
+// DG Positive / Negative styling
+.pos-dg {
+  color: #10b981 !important;
+  font-weight: 600;
+}
+.neg-dg {
+  color: #ef4444 !important;
+  font-weight: 600;
+}
+
+// Legend styles
+.legend-card {
+  background: var(--football-card-bg);
+  border: 1px solid var(--football-card-border);
+  border-radius: 12px;
+  padding: 16px;
+  backdrop-filter: blur(16px);
+  margin-top: 16px;
+}
+
+.legend-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--football-text-secondary);
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding-bottom: 6px;
+}
+
+.legend-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: var(--football-text-secondary);
+  font-weight: 600;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+
+  &.ch { background-color: var(--champions-color); }
+  &.eu { background-color: var(--europa-color); }
+  &.co { background-color: var(--conference-color); }
+  &.re { background-color: var(--relegation-color); }
+}
+
+// Spinner & state containers
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: var(--football-text-secondary);
+
+  ion-spinner {
+    --color: var(--football-accent);
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+}
+
+.error-container {
+  padding: 16px;
+}
+
+.error-card {
+  --background: rgba(239, 68, 68, 0.1);
+  --color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  margin: 0;
+
+  h3 {
+    margin-top: 0;
+    font-weight: 700;
+    color: #ef4444;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--football-text-secondary);
+  font-size: 0.95rem;
+}
+
+// Animations
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
