@@ -1,0 +1,12 @@
+# Ignorar carpetas pesadas de dependencias
+**/node_modules/
+
+# Ignorar archivos y caches de Gradle / compilacion nativa
+**/.gradle/
+**/build/
+
+# Ignorar configuraciones del editor/sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
