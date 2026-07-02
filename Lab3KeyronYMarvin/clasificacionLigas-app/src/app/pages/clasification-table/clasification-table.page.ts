@@ -22,6 +22,7 @@ import {
   IonAvatar,
   IonBadge
 } from '@ionic/angular/standalone';
+import { Preferences } from '@capacitor/preferences';
 import { ClasificationService } from '../../services/clasification.service';
 import { ILeague } from '../../models/league.model';
 import { ISeason } from '../../models/season.model';
@@ -74,10 +75,18 @@ export class ClasificationTablePage implements OnInit {
   loadLeagues() {
     this.isLoading = true;
     this.clasificationService.getFootballLeagues().subscribe({
-      next: (leagues) => {
+      next: async (leagues) => {
         this.leagues = leagues;
         if (this.leagues.length > 0) {
-          this.selectedLeagueId = this.leagues[0].idLeague;
+          // Check if there is a saved league selection
+          const { value: savedLeagueId } = await Preferences.get({ key: 'last_selected_league' });
+          const leagueExists = this.leagues.some(l => l.idLeague === savedLeagueId);
+          if (savedLeagueId && leagueExists) {
+            this.selectedLeagueId = savedLeagueId;
+          } else {
+            this.selectedLeagueId = this.leagues[0].idLeague;
+            await Preferences.set({ key: 'last_selected_league', value: this.selectedLeagueId });
+          }
           this.loadSeasons(this.selectedLeagueId);
         } else {
           this.isLoading = false;
@@ -90,11 +99,12 @@ export class ClasificationTablePage implements OnInit {
     });
   }
 
-  onLeagueChange(event: any) {
+  async onLeagueChange(event: any) {
     const leagueId = event.detail.value;
     if (leagueId) {
       this.selectedLeagueId = leagueId;
       this.tableData = [];
+      await Preferences.set({ key: 'last_selected_league', value: leagueId });
       this.loadSeasons(leagueId);
     }
   }
@@ -102,10 +112,18 @@ export class ClasificationTablePage implements OnInit {
   loadSeasons(leagueId: string) {
     this.isLoading = true;
     this.clasificationService.getSeasons(leagueId).subscribe({
-      next: (seasons) => {
+      next: async (seasons) => {
         this.seasons = seasons;
         if (this.seasons.length > 0) {
-          this.selectedSeason = this.seasons[0].strSeason;
+          // Check if there is a saved season selection
+          const { value: savedSeason } = await Preferences.get({ key: 'last_selected_season' });
+          const seasonExists = this.seasons.some(s => s.strSeason === savedSeason);
+          if (savedSeason && seasonExists) {
+            this.selectedSeason = savedSeason;
+          } else {
+            this.selectedSeason = this.seasons[0].strSeason;
+            await Preferences.set({ key: 'last_selected_season', value: this.selectedSeason });
+          }
           this.loadTable(this.selectedLeagueId, this.selectedSeason);
         } else {
           this.isLoading = false;
@@ -118,10 +136,11 @@ export class ClasificationTablePage implements OnInit {
     });
   }
 
-  onSeasonChange(event: any) {
+  async onSeasonChange(event: any) {
     const season = event.detail.value;
     if (season) {
       this.selectedSeason = season;
+      await Preferences.set({ key: 'last_selected_season', value: season });
       this.loadTable(this.selectedLeagueId, this.selectedSeason);
     }
   }
