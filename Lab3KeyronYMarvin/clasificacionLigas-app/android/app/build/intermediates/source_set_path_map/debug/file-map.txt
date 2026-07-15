@@ -1,0 +1,32 @@
+com.marvincampos.clasificacionligas.app-core-1.10.0-0 C:\Users\marvi\.gradle\caches\8.8\transforms\1e388ca0fcdecbcb60b2106e6b3ddacf\transformed\core-1.10.0\res
+com.marvincampos.clasificacionligas.app-lifecycle-livedata-2.6.1-1 C:\Users\marvi\.gradle\caches\8.8\transforms\46b34397ac26b67da303d8f0d930e5c3\transformed\lifecycle-livedata-2.6.1\res
+com.marvincampos.clasificacionligas.app-lifecycle-process-2.6.1-2 C:\Users\marvi\.gradle\caches\8.8\transforms\481a7c76e382abfc1984958ad14b3d58\transformed\lifecycle-process-2.6.1\res
+com.marvincampos.clasificacionligas.app-core-runtime-2.2.0-3 C:\Users\marvi\.gradle\caches\8.8\transforms\5031086c56f6b6bd6026e1d6ccd4d9e0\transformed\core-runtime-2.2.0\res
+com.marvincampos.clasificacionligas.app-lifecycle-viewmodel-savedstate-2.6.1-4 C:\Users\marvi\.gradle\caches\8.8\transforms\5d46c5e96fd50d28d3633048d7a28531\transformed\lifecycle-viewmodel-savedstate-2.6.1\res
+com.marvincampos.clasificacionligas.app-annotation-experimental-1.3.0-5 C:\Users\marvi\.gradle\caches\8.8\transforms\6370f1b9d8ffbe91c0a0fe26a7168e8a\transformed\annotation-experimental-1.3.0\res
+com.marvincampos.clasificacionligas.app-emoji2-views-helper-1.2.0-6 C:\Users\marvi\.gradle\caches\8.8\transforms\66b0531e17a30647ed26a542d74ccfe7\transformed\emoji2-views-helper-1.2.0\res
+com.marvincampos.clasificacionligas.app-coordinatorlayout-1.2.0-7 C:\Users\marvi\.gradle\caches\8.8\transforms\74254d069b51ddb33bbdb4e0c5734aa5\transformed\coordinatorlayout-1.2.0\res
+com.marvincampos.clasificacionligas.app-fragment-1.5.6-8 C:\Users\marvi\.gradle\caches\8.8\transforms\746a83b1cbdfe1bb17ef10b99b9e5d91\transformed\fragment-1.5.6\res
+com.marvincampos.clasificacionligas.app-lifecycle-livedata-core-2.6.1-9 C:\Users\marvi\.gradle\caches\8.8\transforms\79d588385fd1031645649f92c21bcd5e\transformed\lifecycle-livedata-core-2.6.1\res
+com.marvincampos.clasificacionligas.app-savedstate-1.2.1-10 C:\Users\marvi\.gradle\caches\8.8\transforms\7dde429e1ab221d82ea960c66bd11bf3\transformed\savedstate-1.2.1\res
+com.marvincampos.clasificacionligas.app-core-ktx-1.10.0-11 C:\Users\marvi\.gradle\caches\8.8\transforms\9c4d8f81f4df0566c46f088dca49d2be\transformed\core-ktx-1.10.0\res
+com.marvincampos.clasificacionligas.app-lifecycle-runtime-2.6.1-12 C:\Users\marvi\.gradle\caches\8.8\transforms\a8618728f9f52e593490c93b46fe6538\transformed\lifecycle-runtime-2.6.1\res
+com.marvincampos.clasificacionligas.app-profileinstaller-1.3.0-13 C:\Users\marvi\.gradle\caches\8.8\transforms\b867edf3136188e67457df075d0cfd47\transformed\profileinstaller-1.3.0\res
+com.marvincampos.clasificacionligas.app-emoji2-1.2.0-14 C:\Users\marvi\.gradle\caches\8.8\transforms\c0236b2f84b689ddd0f0dd297382cf3a\transformed\emoji2-1.2.0\res
+com.marvincampos.clasificacionligas.app-core-splashscreen-1.0.0-15 C:\Users\marvi\.gradle\caches\8.8\transforms\c7c44e2c5c7d5da14c4e45eb8ffd9b53\transformed\core-splashscreen-1.0.0\res
+com.marvincampos.clasificacionligas.app-activity-1.7.0-16 C:\Users\marvi\.gradle\caches\8.8\transforms\caa2279c0892400dc85989d846c586d0\transformed\activity-1.7.0\res
+com.marvincampos.clasificacionligas.app-lifecycle-viewmodel-2.6.1-17 C:\Users\marvi\.gradle\caches\8.8\transforms\db0fad62a3f9851fe9b70560ef4ba7a5\transformed\lifecycle-viewmodel-2.6.1\res
+com.marvincampos.clasificacionligas.app-webkit-1.6.1-18 C:\Users\marvi\.gradle\caches\8.8\transforms\e40d3ebe717d43f7270260914be454a6\transformed\webkit-1.6.1\res
+com.marvincampos.clasificacionligas.app-appcompat-1.6.1-19 C:\Users\marvi\.gradle\caches\8.8\transforms\ee4b8e471b05d101dd17ebc787adba5b\transformed\appcompat-1.6.1\res
+com.marvincampos.clasificacionligas.app-startup-runtime-1.1.1-20 C:\Users\marvi\.gradle\caches\8.8\transforms\f5ace273be9806a7df8bd4e0b231d67d\transformed\startup-runtime-1.1.1\res
+com.marvincampos.clasificacionligas.app-appcompat-resources-1.6.1-21 C:\Users\marvi\.gradle\caches\8.8\transforms\f7d2a2afb4f8de2846b1ea1ebd1cc42d\transformed\appcompat-resources-1.6.1\res
+com.marvincampos.clasificacionligas.app-pngs-22 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\android\app\build\generated\res\pngs\debug
+com.marvincampos.clasificacionligas.app-resValues-23 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\android\app\build\generated\res\resValues\debug
+com.marvincampos.clasificacionligas.app-packageDebugResources-24 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.marvincampos.clasificacionligas.app-packageDebugResources-25 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.marvincampos.clasificacionligas.app-merged_res-26 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\android\app\build\intermediates\merged_res\debug
+com.marvincampos.clasificacionligas.app-debug-27 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\android\app\src\debug\res
+com.marvincampos.clasificacionligas.app-main-28 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\android\app\src\main\res
+com.marvincampos.clasificacionligas.app-packaged_res-29 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\android\capacitor-cordova-android-plugins\build\intermediates\packaged_res\debug
+com.marvincampos.clasificacionligas.app-packaged_res-30 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\node_modules\@capacitor\android\capacitor\build\intermediates\packaged_res\debug
+com.marvincampos.clasificacionligas.app-packaged_res-31 C:\Users\marvi\OneDrive\Escritorio\Progra 5\Lab3KeyronYMarvin\clasificacionLigas-app\node_modules\@capacitor\preferences\android\build\intermediates\packaged_res\debug
